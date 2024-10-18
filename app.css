@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.coming-soon-content {
+  flex: 1;
+}
+
+.coming-soon-content h1 {
+  font-size: 48px;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.coming-soon-content p {
+  font-size: 24px;
+  color: #333;
+}
+
+.food-banner {
+  flex: 1;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #59ee60;
+  font-size: 30px;
+}
+.social-icons a:hover {
+  color: #eef35e;
+}
+
+/* Default grid layout: 1 column (for mobile/smaller screens) */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* For larger screens (desktops/laptops) */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+  }
+}
+
+.grid-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  margin-bottom: 10px;
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+}
+
+.grid-item h5 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.grid-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+.icon-circle {
+  font-size: 24px;
+  color: #0073b1; /* LinkedIn default color */
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.icon-circle:hover {
+  color: #005582;
+}
+
+
+
+/* COntact */
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-content {
+  flex: 1;
+}
+
+.contact-content h1 {
+  font-size: 48px;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #218c54;
+}
+
+.contact-banner {
+  flex: 1;
+}
+
+.contact-banner img {
+  max-width: 100%;
+}
