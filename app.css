@@ -153,13 +153,17 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 20px;
+  padding: 20px; /* General padding for top, bottom, and sides */
+  padding-left: 10%; /* Additional padding from the left side */
+  padding-right: 10%; /* Additional padding from the right side */
 }
 
 /* For larger screens (desktops/laptops) */
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+    padding-left: 15%; /* Adjust padding for larger screens */
+    padding-right: 15%;
   }
 }
 
@@ -178,8 +182,9 @@ footer {
 
 .grid-item img {
   margin-bottom: 10px;
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
+  width: 150px !important; /* Force the width */
+  height: 150px !important; /* Force the height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .grid-item h5 {
@@ -191,6 +196,7 @@ footer {
   color: #666;
   font-size: 14px;
 }
+
 
 .icon-circle {
   font-size: 24px;
