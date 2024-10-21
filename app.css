@@ -296,3 +296,6 @@ footer {
       max-width: 100%; /* Make them full-width on mobile */
   }
 }
+.custom-modal-width {
+  max-width: 80%; /* Adjust this value to change the modal width */
+}
