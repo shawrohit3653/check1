@@ -299,3 +299,29 @@ footer {
 .custom-modal-width {
   max-width: 80%; /* Adjust this value to change the modal width */
 }
+.download-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-section h3 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between the two badges */
+}
+
+.app-badge {
+  width: 150px; /* Adjust the width as needed */
+  transition: transform 0.3s;
+}
+
+.app-badge:hover {
+  transform: scale(1.1); /* Add hover effect */
+}
