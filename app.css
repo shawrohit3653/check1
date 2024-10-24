@@ -66,36 +66,47 @@ nav ul li a {
 .food-banner {
   flex: 1;
 }
-
+/* Footer Styles */
 footer {
   background-color: #f8f8f8;
-  padding: 40px 0;
+  padding: 60px 0; /* Add more padding for breathing space */
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: 1200px; /* Widen the container for better alignment */
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Align columns evenly */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: flex-start;
 }
 
 .footer-links {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  gap: 80px; /* Increase gap between the columns for better spacing */
+}
+
+.footer-column {
+  flex: 1; /* Ensure all columns take equal width */
 }
 
 .footer-links h4 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
+  text-align: left; /* Align titles to the left */
 }
 
 .footer-links ul {
   list-style-type: none;
   padding: 0;
+  text-align: left; /* Keep the list items left aligned */
 }
 
 .footer-links ul li {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .footer-links ul li a {
@@ -103,27 +114,75 @@ footer {
   color: #333;
   transition: color 0.3s ease;
 }
+
 .footer-links ul li a:hover {
   color: #32CD32;
 }
 
-.footer-links ul li {
+/* Social media icons */
+.footer-social {
+  display: flex;
+  gap: 15px; /* Add space between the social icons */
+}
+
+.footer-social a {
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #32CD32;
+}
+
+/* Contact info styling */
+.footer-contact {
+  text-align: left;
   font-size: 14px;
+  color: #333;
 }
 
-.footer-links ul li strong {
-  font-weight: bold;
+.footer-contact p {
+  margin: 5px 0;
 }
 
+/* Download app buttons styling */
+.footer-app {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer-app a img {
+  width: 130px; /* Adjust app icon size */
+  transition: transform 0.3s ease;
+}
+
+.footer-app a:hover img {
+  transform: scale(1.05);
+}
+
+/* Footer responsiveness */
 @media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-column {
     text-align: center;
   }
 
-  .footer-links .col-md-3 {
-    margin-bottom: 20px;
+  .footer-contact, .footer-social, .footer-app {
+    text-align: center;
   }
 }
+
 
 .social-icons {
   display: flex;
@@ -131,21 +190,43 @@ footer {
   gap: 15px;
   margin-top: 50px;
 }
+
 .social-icons a {
-  color: #32CD32; /* Matches the green color you showed in the image */
   font-size: 24px;
   display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #32CD32;
   text-align: center;
   line-height: 40px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease;
+  color: inherit; /* Keeps the default color of icons */
+  text-decoration: none; /* Removes underline */
 }
+
 .social-icons a:hover {
-  background-color: #32CD32;
-  color: white;
+  transform: scale(1.1); /* Enlarge the icon slightly on hover */
+}
+
+/* Specific Colors for Icons */
+.social-icons a i.fab.fa-facebook {
+  color: #3b5998; /* Facebook's official color */
+}
+
+.social-icons a i.fab.fa-twitter {
+  color: #00acee; /* Twitter's official color */
+}
+
+.social-icons a i.fab.fa-instagram {
+  color: #e1306c; /* Instagram's official gradient color */
+}
+
+.social-icons a i.fab.fa-linkedin {
+  color: #0072b1; /* LinkedIn's official color */
+}
+
+.social-icons a i.fab.fa-youtube {
+  color: #FF0000; /* YouTube's official color */
 }
 
 /* Default grid layout: 1 column (for mobile/smaller screens) */
